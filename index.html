@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Document Assistant Using AI</h1>
+    <div class="container">
+        <div class="box">
+            <h2 class="he">Document Upload</h2class>
+            <label for="documentUpload" class="upload-label">
+                <input type="file" id="documentUpload" accept=".txt">
+                <span class="placeholder">Upload here</span>
+            </label>
+        </div>
+        <div class="box">
+            <h2 class="he">User Query</h2>
+            <form onsubmit="searchQuery(); return false;">
+                <input class="he2" type="text" id="userQuery" placeholder="Enter your query">
+            </form>
+        </div>
+        <div class="box">
+            <h2 class="he">Retrieved result</h2>
+            <textarea class="he3" id="answer" rows="5" cols="50" readonly placeholder="Answer will appear here"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
